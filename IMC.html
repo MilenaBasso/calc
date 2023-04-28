@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible"content="IE-edge">
+<meta name="viewport" content="width=devide-eidth, initial-scale=1.0">
+<title>Calculadora de IMC</title>
+<link rel =stylesheet href=style.css></head>
+
+<header>
+    <h1>Calculadora de Índice de Massa Corporal</h2>
+</header>
+
+<body>
+    <div class ="texto">
+        <h3 id="descExercicio">
+            Resultado abaixo de 17 - Muito abaixo do peso;<br>
+            Resultado entre 17 e 18,49 - Abaixo do peso; <br>
+            Resultado entre 18,5 e 24,99 - Peso ideal;<br>
+            Resultado entre 25 e 29,99 - Sobrepeso;<br>
+            Resultado entre 30 e 34,9 - Obesidade grau I;<br>
+            Resultado entre 35 e 39,9 - Obesidade grau II(severa);<br>
+            Resultado acima de 40 - Obesidade grau III (mórbida);<br>
+        </h3>
+    </div>
+
+    <div class ="botoes">
+        <form onsubmit="return calcular(event)">
+            <label>Digite seu peso:</label><br><br>
+            <input type="text" nome="peso" id="peso" placeholder="Exemplo: 70"/><br><br>
+    
+            <label>Digite sua altura:</label><br><br>
+            <input type="text" nome="altura" id="altura" placeholder="Exemplo: 1,90"/><br><br>
+    
+            <input type="submit" value="Calcular IMC"/>
+        </form>
+    </div>
+
+    <div id="resultado"></div>
+
+    <script src="imc.js"></script> 
+</body>
+
+<footer>
+    <p>O Índice de Massa Corporal foi criado no século 19 por Lambert Quételet(matemático), é um cálculo simples que mostra se o peso está adequado ou se está abaixo ou acima do peso. </p>
+</footer>
+</html>
